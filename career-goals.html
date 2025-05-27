@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>Career Goals - Zackary Bearden</title>
+</head>
+<body>
+    <header>
+        <h1>Zackary Bearden's Career Goals</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="cover-letter.html" class="nav-link">Cover Letter</a></li>
+                <li><a href="career-goals.html" class="nav-link active">Career Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="sectionheader">My Career Goals</h2>
+            <p>
+                My ultimate career goal is to become a <strong>cybersecurity expert</strong>, specializing in <em>network 
+                security architecture</em> and intrusion detection. I aim to build systems that safeguard critical 
+                infrastructure, ensuring data integrity and privacy in a rapidly evolving technological landscape.
+            </p>
+            <p>
+                In the short term, I am focused on completing my degree in Network Engineering and Security at Western 
+                Governors University, while pursuing certifications like <strong>CompTIA A+</strong>, Network+, and Security+.
+            </p>
+            <p>
+                My long-term vision includes working with leading IT companies to <em>implement innovative security solutions</em>, 
+                mentor aspiring professionals, and contribute to the ever-evolving field of technology.
+            </p>
+            <figure>
+                <img src="images/tech guy.jpg" alt="Tech professional working on a computer" style="max-width: 100%;" />
+                <figcaption>Aiming for a future in technology and cybersecurity.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2 class="sectionheader">Media Highlights</h2>
+            <p>Listen to my audio explanation of my career goals:</p>
+            <audio controls>
+                <source src="audio/Career Goals Audio.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+            <p>Watch a video presentation of my career ambitions:</p>
+            <video controls width="600">
+                <source src="video/Career Goals Video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2 class="sectionheader">Contact Me</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post" class="form-container">
+                <div class="form-column">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required />
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required />
+
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" id="company-name" name="company-name" />
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-column">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <fieldset>
+                        <legend>Best Contact Time:</legend>
+                        <label><input type="radio" id="am" name="contact-time" value="am" required /> A.M.</label><br />
+                        <label><input type="radio" id="pm" name="contact-time" value="pm" /> P.M.</label><br />
+                        <label><input type="radio" id="anytime" name="contact-time" value="anytime" /> Any Time</label>
+                    </fieldset>
+
+                    <label for="preferred-contact">Preferred Contact Method:</label>
+                    <select id="preferred-contact" name="preferred-contact" required>
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                    </select>
+                </div>
+                <div class="form-buttons">
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Zackary Bearden. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

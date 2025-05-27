@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>Zackary Bearden's Resume</title>
+    <script>
+        // JavaScript to populate the date
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateDiv = document.getElementById('currentDate');
+            const today = new Date();
+            dateDiv.textContent = today.toDateString();
+
+            // Writing a message to the console
+            console.log("Resume loaded successfully on " + today.toDateString());
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Zackary Bearden's Resume</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                <li><a href="cover-letter.html" class="nav-link">Cover Letter</a></li>
+                <li><a href="career-goals.html" class="nav-link">Career Goals</a></li>
+            </ul>
+        </nav>
+        <a href="#contactinfo">Contact Me</a>
+    </header>
+
+    <!-- Current Date -->
+    <div id="currentDate" style="font-size: 1.2em; font-style: italic; margin: 1em 0;"></div>
+
+    <!-- OBJECTIVE STATEMENT -->
+    <article>
+        <section>
+            <h2 class="sectionheader">Objective</h2>
+            <p>
+                I am a dedicated instructor with a proven ability to communicate complex concepts effectively, 
+                currently pursuing a degree in <strong>Network Engineering and Cybersecurity</strong>. Seeking an 
+                <em>entry level role in IT</em> to leverage strong problem solving skills, a passion for technology, 
+                and foundational knowledge of network security protocols. Eager to contribute to safeguarding 
+                organizational assets while continuing to grow in the field of cybersecurity.
+            </p>
+        </section>
+    </article>
+    <hr />
+
+    <!-- EXPERIENCE -->
+    <section>
+        <h2 class="sectionheader">Experience</h2>
+        <p>
+            With a strong background in teaching and curriculum development, I bring exceptional communication 
+            and problem solving skills to the IT field. My experience in breaking down complex concepts for 
+            diverse audiences equips me to tackle technical challenges, collaborate effectively, and deliver 
+            solutions that bridge knowledge gaps in dynamic environments.
+        </p>
+        <ul>
+            <li>Ancora Education
+                <ul>
+                    <li><strong>Instructor</strong></li>
+                    <li><em>September 2023 - Present</em></li>
+                    <li>Responsibilities:
+                        <ul>
+                            <li>
+                                Develop and implement course material to prepare students for a career in logistics 
+                                and transportation.<br /><span>Emphasized hands-on learning and real-world applications.</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Eagle Transport
+                <ul>
+                    <li><strong>Transportation Specialist</strong></li>
+                    <li><em>March 2021 - September 2023</em></li>
+                    <li>Responsibilities:
+                        <ul>
+                            <li>Manage deliverables of hazardous materials.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Wilson Logistics
+                <ul>
+                    <li><strong>Instructor</strong></li>
+                    <li><em>March 2018 - March 2021</em></li>
+                    <li>Responsibilities:
+                        <ul>
+                            <li>Develop and implement course material to prepare students for a career in logistics and transportation.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <hr />
+
+    <!-- EDUCATION -->
+    <section>
+        <h2 class="sectionheader">Education</h2>
+        <ul>
+            <li><a href="https://www.wgu.edu" target="_blank">Western Governor's University</a>
+                <ul>
+                    <li><strong>Bachelor of Science</strong>, <em>Network Engineering and Security</em></li>
+                </ul>
+            </li>
+            <li>Summertown High School
+                <ul>
+                    <li><strong>High School Diploma</strong></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <hr />
+
+    <!-- CERTIFICATIONS -->
+    <section>
+        <h2 class="sectionheader">Certifications</h2>
+        <table>
+            <caption>Certifications and Training</caption>
+            <thead>
+                <tr>
+                    <th>Certification</th>
+                    <th>Issuing Organization</th>
+                    <th>Issue Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CompTIA A+</td>
+                    <td>CompTIA</td>
+                    <td>March 2025</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>CompTIA Network+</td>
+                    <td>CompTIA</td>
+                    <td>January 2024</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>LPI Linux Essentials</td>
+                    <td>Linux Professional Institute</td>
+                    <td>June 2025</td>
+                    <td>In Progress</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr />
+
+    <!-- SKILLS -->
+    <section>
+        <h2 class="sectionheader">Skills</h2>
+        <ul id="skillslist">
+            <li>Routing and Switching</li>
+            <li>Network Design and Architecture</li>
+            <li>Wireless Networking</li>
+            <li>Network Automation and Scripting</li>
+            <li>Cloud Networking</li>
+            <li>Network Performance Monitoring and Troubleshooting</li>
+            <li>Firewall and VPN Configuration</li>
+            <li>Intrusion Detection and Prevention Systems (IDPS)</li>
+            <li>Network Security Architecture</li>
+            <li>Incident Response and Threat Management</li>
+            <li>Security Protocols and Standards</li>
+            <li>Penetration Testing and Vulnerability Management</li>
+        </ul>
+    </section>
+    <hr />
+
+    <!-- CONTACT INFORMATION -->
+    <footer>
+        <address id="contactinfo">
+            Zackary Bearden <br />
+            121 Ivystone Dr <br />
+            Apt E <br />
+            Myrtle Beach, SC 29588 <br />
+            <strong>Phone:</strong> 931-477-0845
+        </address>
+    </footer>
+</body>
+</html>
